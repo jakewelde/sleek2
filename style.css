@@ -1,0 +1,233 @@
+/*
+Theme Name: Sleek2
+Theme URI:
+Author: Jake Welde
+Author URI: http://www.jakewelde.com/
+Description: Minimalist theme for personal portfolio site.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: portfolio
+Text Domain: sleek
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+a:link {
+  color: #0094e0;
+  text-decoration: none;
+  font-style: italic;
+}
+
+a:visited {
+  color: #000000;
+}
+
+a:hover {
+  color: #097;
+}
+
+a:active {
+  color: #000000;
+}
+
+h1 {
+  padding: 0px;
+  margin: 0px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: 40px;
+  font-weight: 300;
+}
+
+
+#header {
+  position: relative;
+  height: 80px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+#nav {
+  position: absolute;
+  bottom: 5px;
+  right: 0;
+  font-size: 22px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  letter-spacing: 1pt;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+#nav li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+#nav a, .withImage a {
+  font-style: normal;
+}
+
+#wrapper {
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+body {
+  background-color: #f9f9f9;
+  padding-bottom: 20px;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 300;
+  /* font-family: 'IBM Plex Sans Condensed', sans-serif; */
+  /* font-family: 'IBM Plex Serif', serif; */
+  /* font-family: 'IBM Plex Mono', monospace; */
+}
+
+#myMosaic div.withImage {
+  width: 380px;
+  height: 300px;
+  float: left;
+  margin: 10px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto 300px ;
+  cursor: pointer;
+  position: relative;
+  /* box-shadow: 0px 0px 5px 1px #ccc; */
+}
+
+.linkWrap {
+  position: absolute;
+  z-index: 4;
+  opacity: 0;
+  width: 100%;
+}
+
+.withImage a {
+  display: block;
+  line-height: 300px;
+  font-size: 20px;
+  font-weight: 200;
+  text-align: center;
+  color: white;
+  /* background-color: red; */
+}
+
+.withImage div.shader {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: black;
+  opacity: 0;
+  z-index: 1;
+}
+
+#content {
+  padding: 10px;
+}
+
+#titleContent {
+  position: relative;
+  height: 300px;
+  text-align: right;
+}
+
+#titleContent .leftSide {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 360px;
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+img.featured {
+  width: 400px;
+  margin-top: 10px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.context {
+  margin-bottom: 5px;
+  font-style: italic;
+}
+
+.credit {
+  font-style: italic;
+}
+
+#main {
+    /* background-color: red; */
+}
+
+.youtubeEmbed {
+  width: 560px;
+  height: 315px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  /* background-color: blue; */
+  /* margin-bottom: 20px; */
+}
+
+#main .text {
+  margin-top: 20px;
+  text-align: justify;
+  line-height: 140%;
+
+}
+
+h2.pageHeader {
+  margin-top: 40px;
+}
+
+.headerImage {
+    margin-top: 15px;
+    float: right;
+    width: 250px;
+    margin-left: 20px;
+}
+
+.blurb {
+  text-align: justify;
+  margin-bottom: 10px;
+}
+
+.narrow {
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+}
+
+
+.wp-caption-text {
+    font-style: italic;
+    margin-top: 10pt;
+    text-align: center;
+}
