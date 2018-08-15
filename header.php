@@ -41,6 +41,6 @@
           <li><a href="">Resume</a></li>
           <li><a href="">Work</a></li>
         </ul> -->
-        <h1><a href="/sleek/"><?php bloginfo('name'); ?></a></h1>
+        <h1><a href="/"><?php bloginfo('name'); ?></a></h1>
         <!-- <div class="clear"></div> -->
       </div>
