@@ -6,10 +6,6 @@
       <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:100,100i,400,400i" rel="stylesheet">
 
 
-      <link rel="stylesheet" type="text/css" href="style.css" />
-
-      <script src="jquery.min.js"></script>
-
 
         <title><?php
             if ( is_single() ) { single_post_title(); }
@@ -31,32 +27,20 @@
          <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 
     </head>
+    <body>
 
 
     <div id="wrapper">
 
       <div id="header">
 
-        <?php wp_nav_menu( array( 'sort_column' => 'menu_order', 'container_class' => 'menu-header' ) ); ?>
 
-        <ul id="nav">
+        <?php wp_nav_menu( array( 'sort_column' => 'menu_order', 'container_class' => 'menu-header', 'name' => 'navigation' ) ); ?>
+        <!-- <ul id="nav">
           <li><a href="about.html">About</a></li>
           <li><a href="">Resume</a></li>
           <li><a href="">Work</a></li>
-        </ul>
-        <h1><?php bloginfo('name'); ?></h1>
+        </ul> -->
+        <h1><a href="/sleek/"><?php bloginfo('name'); ?></a></h1>
         <!-- <div class="clear"></div> -->
       </div>
-
-
-    <body>
-        <div id="column">
-            <h1 class="blog-title"><a href="/"></a></h1>
-
-        <div id="masthead">
-
-            <div id="access">
-				<?php wp_nav_menu( array( 'sort_column' => 'menu_order', 'container_class' => 'menu-header' ) ); ?>
-            </div><!-- #access -->
-
-        </div><!-- #masthead -->

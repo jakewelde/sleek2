@@ -2,10 +2,12 @@
 
     @ini_set( 'upload_max_size' , '10M' );
 
+    add_theme_support( 'post-thumbnails' );
+
 	// Make theme available for translation
 	// Translations can be filed in the /languages/ directory
 	load_theme_textdomain( 'hbd-theme', TEMPLATEPATH . '/languages' );
-	
+
 	add_theme_support( 'menus' );
 
 	$locale = get_locale();
@@ -48,7 +50,7 @@
 	            endif;
 	        ?>
 	<?php } // end custom_comments
-	
+
 	// Custom callback to list pings
 	function custom_pings($comment, $args, $depth) {
 	       $GLOBALS['comment'] = $comment;
@@ -64,7 +66,7 @@
 	                <?php comment_text() ?>
 	            </div>
 	<?php } // end custom_pings
-	
+
 	// Produces an avatar image with the hCard-compliant photo class
 	function commenter_link() {
 	    $commenter = get_comment_author_link();
@@ -77,7 +79,7 @@
 	    $avatar = str_replace( "class='avatar", "class='photo avatar", get_avatar( $avatar_email, 80 ) );
 	    echo $avatar . ' <span class="fn n">' . $commenter . '</span>';
 	} // end commenter_link
-	
+
 	// For category lists on category archives: Returns other categories except the current one (redundant)
 	function cats_meow($glue) {
 	    $current_cat = single_cat_title( '', false );
@@ -94,7 +96,7 @@
 
 	    return trim(join( $glue, $cats ));
 	} // end cats_meow
-	
+
 	// For tag lists on tag archives: Returns other tags except the current one (redundant)
 	function tag_ur_it($glue) {
 	    $current_tag = single_tag_title( '', '',  false );
@@ -111,7 +113,7 @@
 
 	    return trim(join( $glue, $tags ));
 	} // end tag_ur_it
-	
+
 	// Register widgetized areas
 	function theme_widgets_init() {
 	    // Area 1
@@ -136,7 +138,7 @@
 	} // end theme_widgets_init
 
 	add_action( 'init', 'theme_widgets_init' );
-	
+
 	$preset_widgets = array (
 	    'primary_widget_area'  => array( 'search', 'pages', 'categories', 'archives' ),
 	    'secondary_widget_area'  => array( 'links', 'meta' )
@@ -145,7 +147,7 @@
 	    update_option( 'sidebars_widgets', $preset_widgets );
 	}
 	// update_option( 'sidebars_widgets', NULL );
-	
+
 	// Check for static widgets in widget-ready areas
 	function is_sidebar_active( $index ){
 	  global $wp_registered_sidebars;

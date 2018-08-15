@@ -34,6 +34,11 @@ a:active {
   color: #000000;
 }
 
+h1 a {
+  color: black !important;
+  font-style: normal !important;
+}
+
 h1 {
   padding: 0px;
   margin: 0px;
@@ -48,13 +53,13 @@ h1 {
 #header {
   position: relative;
   height: 80px;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
   margin-top: 30px;
   margin-bottom: 10px;
 }
 
-#nav {
+#menu-navigation {
   position: absolute;
   bottom: 5px;
   right: 0;
@@ -67,12 +72,12 @@ h1 {
   font-weight: 300;
 }
 
-#nav li {
+#menu-navigation li {
   display: inline-block;
   margin-left: 20px;
 }
 
-#nav a, .withImage a {
+#menu-navigation a, .withImage a {
   font-style: normal;
 }
 
@@ -92,10 +97,12 @@ body {
   /* font-family: 'IBM Plex Sans Condensed', sans-serif; */
   /* font-family: 'IBM Plex Serif', serif; */
   /* font-family: 'IBM Plex Mono', monospace; */
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 #myMosaic div.withImage {
-  width: 380px;
+  width: 370px;
   height: 300px;
   float: left;
   margin: 10px;
@@ -117,7 +124,7 @@ body {
 .withImage a {
   display: block;
   line-height: 300px;
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 200;
   text-align: center;
   color: white;
@@ -230,4 +237,43 @@ h2.pageHeader {
     font-style: italic;
     margin-top: 10pt;
     text-align: center;
+}
+
+.credit {
+  width: 60%;
+  float: right;
+}
+
+
+div.youtube {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.fbx-close {
+  display: none !important;
+}
+
+.fbx-rounded, .fbx-inner, .fbx-btn-transition, .fbx-rounded .fbx-item-current, .fbx-rounded .fbx-item-image, .fbx-rounded .fbx-item-next {
+    border-radius: 0px !important;
+}
+
+.foogallery {
+  background-color: none;
+}
+
+.fg-item-inner {
+    background-color: blue !important;
+    border-color: #f9f9f9 !important ;
+}
+
+.fbx-btn-transition {
+  /* background-color: red !important; */
+}
+
+.fbx-next {
+  /* background-color: blue !important; */
 }

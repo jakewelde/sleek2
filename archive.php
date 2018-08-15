@@ -1,9 +1,9 @@
 <?php get_header(); ?>
- 
+
         <div id="container">
             <div id="content">
- 
-                <?php the_post(); ?>          
+
+                <?php the_post(); ?>
 
 				<?php if ( is_day() ) : ?>
 				                <h1 class="page-title"><?php printf( __( 'Daily Archives: <span>%s</span>', 'hbd-theme' ), get_the_time(get_option('date_format')) ) ?></h1>
@@ -22,7 +22,7 @@
 				                    <div class="nav-previous"><?php next_posts_link(__( '<span class="meta-nav">&laquo;</span> Older posts', 'hbd-theme' )) ?></div>
 				                    <div class="nav-next"><?php previous_posts_link(__( 'Newer posts <span class="meta-nav">&raquo;</span>', 'hbd-theme' )) ?></div>
 				                </div><!-- #nav-above -->
-				<?php } ?>            
+				<?php } ?>
 
 				<?php while ( have_posts() ) : the_post(); ?>
 
@@ -51,17 +51,17 @@
 				                    </div><!-- #entry-utility -->
 				                </div><!-- #post-<?php the_ID(); ?> -->
 
-				<?php endwhile; ?>            
+				<?php endwhile; ?>
 
 				<?php global $wp_query; $total_pages = $wp_query->max_num_pages; if ( $total_pages > 1 ) { ?>
 				                <div id="nav-below" class="navigation">
 				                    <div class="nav-previous"><?php next_posts_link(__( '<span class="meta-nav">&laquo;</span> Older posts', 'hbd-theme' )) ?></div>
 				                    <div class="nav-next"><?php previous_posts_link(__( 'Newer posts <span class="meta-nav">&raquo;</span>', 'hbd-theme' )) ?></div>
 				                </div><!-- #nav-below -->
-				<?php } ?>                 
- 
+				<?php } ?>
+
             </div><!-- #content -->
         </div><!-- #container -->
- 
+
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>
