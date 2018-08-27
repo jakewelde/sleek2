@@ -16,6 +16,10 @@ Text Domain: sleek
   margin: 0;
 }
 
+#menu-navigation a:link, #menu-navigation a:visited {
+  color: black;
+}
+
 a:link {
   color: #0094e0;
   text-decoration: none;
